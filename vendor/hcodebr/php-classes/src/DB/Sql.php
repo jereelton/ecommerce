@@ -4,7 +4,7 @@ namespace Hcode\DB;
 
 class Sql {
 
-	const HOSTNAME = "127.0.0.1";
+	const HOSTNAME = "localhost";
 	const USERNAME = "production";
 	const PASSWORD = "123mudar";
 	const DBNAME = "db_ecommerce";
@@ -47,7 +47,7 @@ class Sql {
 
 		$this->setParams($stmt, $params);
 
-		$stmt->execute();
+		return $stmt->execute();
 
 	}
 

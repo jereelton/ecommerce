@@ -36,7 +36,7 @@ class Page {
 	}
 
 	private function setData($data = array()) {
-
+		
 		foreach ($data as $key => $value) {
 			$this->tpl->assign($key, $value);
 		}
@@ -45,7 +45,7 @@ class Page {
 	public function setTpl($name, $data = array(), $returnHTML = false) {
 
 		$this->setData($data);
-
+		
 		return $this->tpl->draw($name, $returnHTML);
 
 	}
