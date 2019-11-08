@@ -154,7 +154,6 @@ class User extends Model {
 
 		} else {
 
-
 			$data = $results[0];
 
 			$results2 = $sql->select("CALL sp_userspasswordsrecoveries_create(:iduser, :desip)", array(
@@ -167,7 +166,6 @@ class User extends Model {
 				throw new \Exception("Nao foi possivel recuperar a senha.");
 				
 			} else {
-
 
 				$dataRecovery = $results2[0];
 
